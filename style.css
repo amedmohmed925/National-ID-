@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 80%;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+  }
+  input[type="submit"]{
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+  }
+  input[type="text"]:focus {
+    border-color: #8959f0;
+    outline: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #8959f0;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #7903be;
+  }
+  
+  #details {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .date div, #retirementAge {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  
+  #age, #gender, #age, .date div {
+    color: #8959f0;
+    font-size: 16px;
+  }
+  #retirementAge{
+    color: #8959f0;
+    font-size: 16px;
+    /* display: flex; */
+    float: inline-end;
+    padding: 15px 0;
+  }
+
+  /* Responsive Styles */
+@media (MIN-width: 481px) and (max-width: 800px) {
+  .main {
+    width: 100%;
+    padding: 15px;
+    /* margin-top: -379px; */
+  }
+  
+  input[type="text"], input[type="submit"] {
+    width: 100%;
+  }
+
+  .date div, #retirementAge {
+    width: 45%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .date {
+    flex-direction: column;
+  }
+
+  .date div, #retirementAge {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .main{
+    padding-top: 260px;
+  }
+}

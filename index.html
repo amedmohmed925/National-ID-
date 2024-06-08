@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./id.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>National ID - رقم الهوية المصري
+    </title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>National ID - رقم الهوية المصري </h1>
+      <form id="nationalIDForm">
+        <input id="inputID" type="text" name="nationalID" placeholder="National ID" />
+        <p id="errorString"></p>
+        <input type="submit" name="submit" value="Submit" />
+      </form>
+
+      <div id="details">
+        <div id="idUser"></div>
+        <div class="date">
+          <div id="year"></div>
+          <div id="month"></div>
+          <div id="day"></div>
+          <div id="age"></div>
+          <div id="gender"></div>
+          <div id="country"></div>
+          <div id="AgeInMonths"></div>
+          <div id="AgeInDays"></div>
+          <div id="ageInHour"></div>
+        </div>
+        <div id="retirementAge"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
